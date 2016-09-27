@@ -2,13 +2,20 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 
 export class ProductDetailPage extends Component {
-  selectTab(event, tabId) {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      activeTabId: 0,
+    };
+  }
+  selectTab(event, tabId) {
+      this.setState({activeTabId:tabId,})
   }
 
   render() {
     const { productId } = this.props.params;
-    const activeTabId = 0;
+    const {activeTabId} = this.state;
     return (
       <div>
         <div className="jumbotron">

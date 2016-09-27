@@ -8,6 +8,7 @@ export class TopNavigation extends Component {
         <ul className="nav nav-pills pull-right">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/products">Products</Link></li>
+          <li><Link to="/warez">Warez</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
         <h3 className="text-muted"><Link to="/">E-shop</Link></h3>
