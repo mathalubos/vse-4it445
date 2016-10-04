@@ -1,21 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 import { ProductList } from '../components/ProductList/ProductList.js';
 
 export class ProductsPage extends Component {
-
-  componentDidMount() {
-    axios('http://dev.backend.xmatl41.vse.handson.pro/api/products')
-    .then((response) => {
-      this.setState({'response' : response});
-    });
-  }
   render() {
-    if (this.state.data) {
-      console.log(this.state.response);
-    }
-
     const products = [
       {
         id: 1,
