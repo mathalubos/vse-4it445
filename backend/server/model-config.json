@@ -33,7 +33,11 @@
     "public": false
   },
   "EshopProduct": {
-    "dataSource": "db",
+    "dataSource": "mysqlds",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "mysqlds",
     "public": true
   }
 }

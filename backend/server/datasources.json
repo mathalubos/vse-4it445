@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mysqlds": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "user_xmatl41",
+    "username": "xmatl41",
+    "password": "x5oe8v4nnldp3v6s",
+    "name": "mysqlds",
+    "connector": "mysql"
   }
 }
