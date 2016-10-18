@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { dummyAction } from '../../actions';
+import { shoppingCartAddProductAction } from '../../actions';
 
 export class AddProductToCartButton extends Component {
   render() {
     const {
       product,
-      dummyAction,
+      shoppingCartAddProductAction,
     } = this.props;
     return (
       <button
-        onClick={() => dummyAction({ product })}
+        onClick={() => shoppingCartAddProductAction(product)}
         type="button"
         className="btn btn-success"
       >
@@ -26,5 +26,5 @@ export class AddProductToCartButton extends Component {
 
 export const AddProductToCartButtonContainer = connect(
   () => ({}),
-  { dummyAction },
+  { shoppingCartAddProductAction },
 )(AddProductToCartButton);
