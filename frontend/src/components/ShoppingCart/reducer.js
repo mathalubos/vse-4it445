@@ -7,6 +7,15 @@ import {
 } from './actions.js';
 
 const initialDummyState = {
+  0: {
+    product: {
+      id: null,
+      title: 'Škoda Superb',
+      price: 750000,
+      shortInfo: 'Luxury car produced in the Czech Republic.',
+    },
+    quantity: 1,
+  },
   1: {
     product: {
       id: 1,
